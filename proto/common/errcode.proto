@@ -1,0 +1,12 @@
+syntax = "proto3";
+package common . errcode;
+
+option java_multiple_files = false;
+option java_package = "com.advertisement.api.common";
+option java_outer_classname = "ErrorCode";
+
+enum EErrorCode
+{
+  OK             = 0;                  // 操作成功
+  DATABASE_ERROR = 1;              // server端数据库异常
+}
